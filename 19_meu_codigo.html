@@ -1,0 +1,22 @@
+<meta charset="utf-8">
+
+<script>
+//Meu código nunca é execultado
+ function pularLinha() {
+        document.write("<br><br>");
+    }
+
+    function imprimir(frase){
+        document.write(frase);
+        pularLinha();
+    }
+
+    var parcelas = [10.40, 40.00, 100.18, 200];
+    
+    for(var i = 0; i < parcelas.length; i = i + 1) {
+        document.write(parcelas[i]);
+    }
+
+    document.write("FIM");
+
+</script>

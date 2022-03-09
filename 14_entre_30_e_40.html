@@ -1,0 +1,35 @@
+<meta charset="utf-8">
+
+<script>
+ 
+	//Todos os números entre 30 a 40, exceto 33 e 37
+
+	function pularLinha() {
+        document.write("<br><br>");
+    }
+
+    function imprimir(frase){
+        document.write(frase);
+        pularLinha();
+    }
+
+    var contador=30;
+   	while(contador<40){
+    	if (contador==33 || contador==37) {
+        	contador=contador+1;
+    	}else{
+        	imprimir(contador);
+        	contador=contador+1;
+    	}
+   }
+    
+    imprimir("Fim");
+
+	//Todos os números de 20 a 0
+	var contador1=20;
+
+	while(contador1>0){
+	    imprimir(contador1);
+	    contador1=contador1-1;
+	} 
+</script>

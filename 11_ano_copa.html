@@ -1,0 +1,26 @@
+<meta charset="utf-8">
+
+<script >
+	
+	function pularLinha() {
+		document.write("<br><br>");
+	}
+
+	function imprimir(frase){
+		document.write(frase);
+		pularLinha();
+	}
+
+	var anoCopa =1930;
+	var anoEscolhido =parseInt(prompt("A partir de qual ano deseja o resultado?"));
+
+	while(anoEscolhido<2016){
+		if(anoEscolhido>1938 && anoEscolhido<1949){
+			anoEscolhido=1950;
+		}
+		imprimir("Teve copa em:" + anoEscolhido);
+		anoEscolhido=anoEscolhido+4;
+	}
+	
+	imprimir("Fim");
+</script>

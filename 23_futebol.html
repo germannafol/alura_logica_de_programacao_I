@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+
+<script>
+	function pularLinha() {
+	    document.write("<br><br>");
+	}
+	function imprimir(informacao) {
+	    document.write(informacao);
+	    pularLinha();
+	}
+
+	var vitorias=parseInt(prompt("Quantas vitórias os seu time tem?");
+	var empates=parseInt(prompt("Quantos empates seu time tem?"));
+	var pontos=vitorias*3+empates;
+
+	imprimir("Seu time tem um total de: " + pontos + " pontos");
+
+	if (pontos> 28){
+	imprimir("Seu time está melhor");
+	}
+
+	if (pontos< 28){
+	imprimir("Seu time está pior");
+	}
+
+	if (pontos == 28){
+	imprimir ("Seu time permanece igual");
+	}
+</script>

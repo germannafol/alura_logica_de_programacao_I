@@ -1,0 +1,31 @@
+<meta charset="utf-8">
+
+<script >
+	
+	function pularLinha() {
+		document.write("<br><br>");
+	}
+
+	function imprimir(frase){
+		document.write(frase);
+		pularLinha();
+	}
+
+	var numeroPensado=Math.round(Math.random()*10);
+	console.log(numeroPensado);
+
+	var contador=1;
+
+	while (contador<=3){
+		var chute=parseInt(prompt("Chute um novo número:"));
+		if (chute==numeroPensado){
+			imprimir("Parabéns");
+			break;
+		}else{
+			imprimir("Seu chute: "+ chute + "Você errou");
+		}
+		contador++;
+	}
+	
+
+</script>

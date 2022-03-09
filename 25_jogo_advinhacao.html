@@ -1,0 +1,31 @@
+<meta charset="utf-8">
+
+<script >
+	
+	function pularLinha() {
+		document.write("<br><br>");
+	}
+
+	function imprimir(frase){
+		document.write(frase);
+		pularLinha();
+	}
+
+	var sorteia =parseInt(prompt("Até que número devo sortear?"));
+	var chute =parseInt(prompt("Chute um número entre 0-"+sorteia));
+	var numeroPensado=Math.round(Math.random()*sorteia);
+
+	console.log(numeroPensado);
+
+	if (chute<numeroPensado&&chute!=numeroPensado){
+		imprimir("foi frio demais");
+	}
+
+	if(chute>numeroPensado){
+		imprimir("foi quente demais");
+	}else{
+		imprimir("Acertou");
+	}
+	
+
+</script>

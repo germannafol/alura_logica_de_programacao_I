@@ -1,0 +1,22 @@
+<meta charset="UTF-8">
+<script>
+
+//O problema das gerações
+
+function pularLinha() {
+    document.write("<br>");
+}
+function imprimir(informacao) {
+    document.write(informacao);
+    pularLinha();
+}
+
+var anoInicial= 1500;
+var anoAtual = 2022;
+
+var mediaGeracao=28;
+
+var calculoGeracao= (anoAtual-anoInicial)/mediaGeracao;
+
+imprimir("O número de gerações atual é: "+ calculoGeracao);
+</script>
